@@ -8560,16 +8560,21 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.main {
-  max-width: 1280px;
-  margin: 0 auto; }
-  .main .main-nav {
-    width: 296px;
-    height: 800px; }
-  .main .nav-item:nth-child(6) {
-    padding-bottom: 320px; }
-  .main .list-unstyled:last-child a {
-    font-size: 14px; }
+.main .main-nav {
+  width: 296px;
+  height: 100vh; }
+
+.main .nav-item:nth-child(6) {
+  padding-bottom: 320px; }
+
+.main .list-unstyled:last-child a {
+  font-size: 14px; }
+
+.main .text-dark {
+  border-left: 4px solid transparent; }
+  .main .text-dark:hover {
+    color: #2a8356 !important;
+    border-left: 4px solid #2a8356; }
 
 .user-img {
   background-position: center center;
