@@ -1,9 +1,7 @@
 .main {
-  max-width: 1280px;
-  margin: 0 auto;
   .main-nav {
     width: 296px;
-    height: 800px;
+    height: 100vh;
   }
   .nav-item:nth-child(6) {
     padding-bottom: 320px;
@@ -11,11 +9,25 @@
   .list-unstyled:last-child a {
     font-size: 14px;
   }
+  .text-menu {
+    border-left: 4px solid transparent;
+    &:hover {
+      color: $secondary !important;
+      border-left: 4px solid $secondary;
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
 }
 .user-img {
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+  object-fit: cover;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+.code-bg {
+  background-color: $primary;
 }
