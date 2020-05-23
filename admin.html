@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>admin</title>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="main d-flex">
+      <!-- 左側選單 -->
+      <section
+        class="main-nav d-flex flex-column justify-content-between bg-primary"
+      >
+        <div>
+          <h1 class="mb-0 p-5 pb-6">
+            <a href="#">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/aea2032f179c37030ef86a2304d2a1a5eded722d/week5/logo-ANSWER.svg"
+                alt=""
+              />
+            </a>
+          </h1>
+          <ul class="nav flex-column">
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="#"
+                ><span class="material-icons pr-3"> insert_chart </span
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="#"
+                ><span class="material-icons pr-3"> forum </span>Question</a
+              >
+            </li>
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="assignment.html"
+                ><span class="material-icons pr-3"> assignment </span
+                >Assignment</a
+              >
+            </li>
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="#"
+                ><span class="material-icons pr-3"> video_library </span
+                >Course</a
+              >
+            </li>
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="admin.html"
+                ><span class="material-icons pr-3"> supervisor_account </span
+                >Admin</a
+              >
+            </li>
+            <li class="nav-item pb-4">
+              <a
+                class="nav-link active text-menu font-weight-bolder d-flex pl-5 py-0"
+                href="#"
+                ><span class="material-icons pr-3"> settings </span>Settings</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- 帳戶 -->
+        <div class="d-flex align-items-center pl-5 pb-5">
+          <img
+            class="user-img mr-3"
+            src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+            alt=""
+          />
+          <ul class="list-unstyled mb-0">
+            <li class="font-weight-bold">Andy Chen</li>
+            <li>
+              <a
+                class="nav-link disabled p-0"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                <small>andy0401@mail.com</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+<!-- 管理員選單 -->
+<section class="w-100 px-5">
+    <div class="d-flex justify-content-between align-items-center pt-5 pb-6">
+        <ul class="nav d-flex align-items-center">
+            <li class="nav-item h4 pr-6">
+                Admin
+            </li>
+            <li class="nav-item dropdown">
+                <button type="button" class="btn d-flex font-weight-600 border-0" data-toggle="modal" data-target="#exampleModal">
+                    <span class="material-icons text-secondary mr-1"> add </span>Add New Admin</a>
+                </button>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item pr-4">
+                <a class="text-dark" href="#"
+                ><span class="material-icons">
+                    search
+                </span></a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="text-dark" href="#"
+                ><span class="material-icons">
+                    notifications_active
+                </span></a
+                >
+            </li>
+        </ul>
+    </div>
+    <!-- 新增管理員 -->
+    <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-4 pl-5">
+                <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <h5 class="pl-5 mb-3">Account</h5>
+        <form class="needs-validation px-5" novalidate>
+            <div class="form-row">
+                <div class="col-12 mb-3 px-1">
+                    <label for="validationCustom01">Name</label>
+                    <input type="text" class="form-control border-dark" id="validationCustom01"  required>
+                    
+                </div>
+                <div class="col-12 px-1 ">
+                    <label for="validationCustom02">Email</label>
+                    <input type="text" class="form-control border-dark mb-3" id="validationCustom02"  required>
+                    <h5 class=" border-top border-primary pt-3 mb-3">Verification</h5>
+                    <div class="invalid-feedback text-dark font-weight-600 font-base mb-3">
+                        <span class="material-icons text-danger vertical-middle mr-1">
+                            report_problem
+                        </span>Unverified
+                        <small class="position-absolute right-0">2020/4/12</small>
+                    </div>
+                    <div class="valid-feedback text-dark font-weight-600 font-base mb-3">
+                        <span class="material-icons text-secondary vertical-middle mr-1">
+                            report_problem
+                        </span>Verified
+                        <small class="position-absolute right-0">2020/4/12</small>
+                    </div>
+                </div>  
+            </div>
+            <button class="btn btn-outline-secondary border-primary text-hoverWhite  d-block w-100 mb-3 py-3"  type="submit">Submit form</button>
+            <h5 class="border-top border-primary pt-3">Access Level</h5>
+            <div class="d-flex align-items-center">
+                <select class="p-3 w-100 appearance-none cursor-pointer" name="level" id="level">
+                    <option value="level">-Choose access level-</option>
+                    <option value="level">123</option>
+                    <option value="level">456</option>
+                    
+                </select>
+                <span class="material-icons position-absolute right-0 pr-6 cursor-pointer">
+                    keyboard_arrow_down
+                    </span>
+            </div>
+        </form>
+        
+        <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 管理員列表 -->
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col" class="d-flex align-items-center pb-0 border-0">
+                ID
+                <span class="material-icons text-secondary d-flex ml-1">
+                    <small>arrow_downward</small>
+                </span>
+            </th>
+            <th scope="col" class="pb-0 border-0">Name</th>
+            <th scope="col" class="pb-0 border-0">Email</th>
+            <th scope="col" class="pb-0 border-0">Verified</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="cursor-pointer">
+            <th scope="row" class="border-top">#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#3</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.Lopez@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#4</th>
+            <td>Pharrell Murray</td>
+            <td>pharrell.Murray@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#6</th>
+            <td>Fatimah Clark</td>
+            <td>fatimah.Clark@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#7</th>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia.Rhodes@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#8</th>
+            <td>Tillie Lucero</td>
+            <td>tillie Lucero@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#9</th>
+            <td>Sabrina Stephenson</td>
+            <td>sabrina Stephenson@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+        <tr class="cursor-pointer">
+            <th scope="row">#10</th>
+            <td>Annie Smith</td>
+            <td>annie Smith@mail.com</td>
+            <td>Yes</td>
+            <td class="text-right pr-0">
+                <span class="material-icons mr-4">
+                    visibility
+                </span>
+                <span class="material-icons">
+                    edit
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</section>
+    </main>
+    <script src="./assets/js/vendors.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
