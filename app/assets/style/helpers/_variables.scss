@@ -88,6 +88,8 @@ $theme-colors: map-merge(
     "light": $light,
     "dark": $dark,
     "menu": $dark,
+    "hoverSecondary": $white,
+    "hoverWhite": $secondary,
   ),
   $theme-colors
 );
@@ -244,7 +246,7 @@ $line-height-lg: 1.5 !default;
 $line-height-sm: 1.5 !default;
 
 $border-width: 1px !default;
-$border-color: $gray-300 !default;
+$border-color: $gray-900 !default;
 
 $border-radius: 0.25rem !default;
 $border-radius-lg: 0.3rem !default;
