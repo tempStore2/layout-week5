@@ -4,10 +4,6 @@
 .font-base {
   font-size: $font-size-base;
 }
-
-.list-style {
-  list-style-type: disc;
-}
 .font-weight-600 {
   font-weight: 600;
 }
@@ -43,4 +39,7 @@
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.list-style {
+  list-style-type: disc;
 }
