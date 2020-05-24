@@ -14,3 +14,6 @@ th {
 .dropdown-toggle::after {
   display: none;
 }
+textarea:focus {
+  outline: none;
+}
