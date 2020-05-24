@@ -1,0 +1,26 @@
+.text-hoverWhite:hover {
+  color: $white !important;
+}
+.text-hoverSecondary:hover {
+  color: $secondary !important;
+}
+
+.text-deactivate:hover {
+  color: $white !important;
+}
+a.text-menu {
+  border-left: 4px solid transparent;
+  &:hover {
+    color: $secondary !important;
+    border-left: 4px solid $secondary;
+  }
+}
+.btn-hoverWhite:hover {
+  background-color: $white !important;
+}
+.page-link:hover {
+  background-color: $secondary;
+}
+.table-hover tbody tr:hover {
+  background-color: #edf4ee;
+}

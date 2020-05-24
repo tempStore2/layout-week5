@@ -1,0 +1,16 @@
+tbody td,
+th {
+  border-bottom: 1px solid $success;
+}
+.main-nav {
+  width: 296px;
+  height: 100vh;
+}
+.form-control:valid {
+  border: none;
+  background-color: $primary;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
