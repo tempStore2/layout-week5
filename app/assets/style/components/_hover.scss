@@ -1,22 +1,17 @@
-.text-hoverWhite:hover {
-  color: $white !important;
+.btn-secondary:hover {
+  color: $secondary !important;
+  background-color: $white;
 }
-.text-hoverSecondary:hover {
+.text-white:hover {
   color: $secondary !important;
 }
-
-.text-deactivate:hover {
-  color: $white !important;
-}
-a.text-menu {
+.text-menu {
+  color: $dark;
   border-left: 4px solid transparent;
   &:hover {
     color: $secondary !important;
     border-left: 4px solid $secondary;
   }
-}
-.btn-hoverWhite:hover {
-  background-color: $white !important;
 }
 .page-link:hover {
   background-color: $secondary;

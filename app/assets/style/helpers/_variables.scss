@@ -87,10 +87,7 @@ $theme-colors: map-merge(
     "danger": $danger,
     "light": $light,
     "dark": $dark,
-    "menu": $dark,
-    "hoverSecondary": $white,
-    "hoverWhite": $secondary,
-    "deactivate": #e3006e,
+    "white": $white,
   ),
   $theme-colors
 );
