@@ -3,13 +3,13 @@
   background-color: $white;
 }
 .text-white:hover {
-  color: $secondary !important;
+  color: $secondary;
 }
 .text-menu {
   color: $dark;
   border-left: 4px solid transparent;
   &:hover {
-    color: $secondary !important;
+    color: $secondary;
     border-left: 4px solid $secondary;
   }
 }
